@@ -81,7 +81,7 @@ public class FuncionarioService {
 
         funcionario.setEmail(funcionarioDTO.getEmail());
         funcionario.setNome(funcionarioDTO.getNome());
-        // A senha não pode ser alterada depois de criada
+        funcionario.setDataNascimento(funcionarioDTO.getDataNascimento());
         funcionario.setSenha(funcionario.getSenha());
 
         return usuarioRepository.save(funcionario);
